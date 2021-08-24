@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GithubUserCell" rowHeight="115" id="OgM-cE-V8G" customClass="GithubUserCell" customModule="Tawk_Practice_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OgM-cE-V8G" id="luk-6Q-hgG">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0O5-hJ-sej">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xZG-YF-Y9n">
+                                <rect key="frame" x="16" y="8" width="382" height="99"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-Nx-3Lv">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RKE-Nx-3Lv" secondAttribute="height" multiplier="1:1" id="UsS-Dm-wgG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="UuK-23-PDM">
+                                        <rect key="frame" x="115" y="30" width="221" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niz-hm-zUv">
+                                                <rect key="frame" x="0.0" y="0.0" width="221" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfi-pk-hta">
+                                                <rect key="frame" x="0.0" y="24.5" width="221" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iI7-xA-mww">
+                                        <rect key="frame" x="352" y="39.5" width="30" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="fPd-Pr-68B"/>
+                                        </constraints>
+                                        <imageReference key="image" image="doc.fill" catalog="system" renderingMode="original"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xZG-YF-Y9n" secondAttribute="trailing" constant="16" id="Zme-Tn-C3D"/>
+                            <constraint firstItem="xZG-YF-Y9n" firstAttribute="top" secondItem="0O5-hJ-sej" secondAttribute="top" constant="8" id="kj7-5u-ZzI"/>
+                            <constraint firstItem="xZG-YF-Y9n" firstAttribute="leading" secondItem="0O5-hJ-sej" secondAttribute="leading" constant="16" id="qwa-pA-C9z"/>
+                            <constraint firstAttribute="bottom" secondItem="xZG-YF-Y9n" secondAttribute="bottom" constant="8" id="xUH-ac-z0l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0O5-hJ-sej" firstAttribute="leading" secondItem="luk-6Q-hgG" secondAttribute="leading" id="KpP-6S-adj"/>
+                    <constraint firstAttribute="bottom" secondItem="0O5-hJ-sej" secondAttribute="bottom" id="N1Z-qs-p5X"/>
+                    <constraint firstItem="0O5-hJ-sej" firstAttribute="top" secondItem="luk-6Q-hgG" secondAttribute="top" id="ef7-XI-PxU"/>
+                    <constraint firstAttribute="trailing" secondItem="0O5-hJ-sej" secondAttribute="trailing" id="nkb-Si-Etq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="0O5-hJ-sej" id="BSm-jO-xZJ"/>
+                <outlet property="detailsLbl" destination="Rfi-pk-hta" id="Xhs-TL-4ga"/>
+                <outlet property="noteImageView" destination="iI7-xA-mww" id="MZs-tH-0fg"/>
+                <outlet property="userImageView" destination="RKE-Nx-3Lv" id="fsk-nu-pa6"/>
+                <outlet property="usernameLbl" destination="niz-hm-zUv" id="2VH-3T-8qY"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="-2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

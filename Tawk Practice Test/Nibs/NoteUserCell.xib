@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NoteUserCell" rowHeight="115" id="fkc-vi-yAY" userLabel="NoteUserCell" customClass="NoteUserCell" customModule="Tawk_Practice_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fkc-vi-yAY" id="Io2-sX-ygV">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlN-is-MM2">
+                        <rect key="frame" x="6" y="6" width="402" height="103"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GkN-7K-ZWL">
+                                <rect key="frame" x="16" y="8" width="370" height="87"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XYa-t0-Kl2" customClass="CacheImageView" customModule="Tawk_Practice_Test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="87"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XYa-t0-Kl2" secondAttribute="height" multiplier="1:1" id="kdg-6i-CrU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="UaD-oj-KiY">
+                                        <rect key="frame" x="103" y="24" width="221" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85y-JH-TKH">
+                                                <rect key="frame" x="0.0" y="0.0" width="221" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whu-qB-Hbt">
+                                                <rect key="frame" x="0.0" y="24.5" width="221" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JTJ-Ez-AWw">
+                                        <rect key="frame" x="340" y="33.5" width="30" height="20"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="wMS-fb-moO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GkN-7K-ZWL" secondAttribute="bottom" constant="8" id="Axg-Su-aGd"/>
+                            <constraint firstItem="GkN-7K-ZWL" firstAttribute="leading" secondItem="KlN-is-MM2" secondAttribute="leading" constant="16" id="FkX-ku-64r"/>
+                            <constraint firstItem="GkN-7K-ZWL" firstAttribute="top" secondItem="KlN-is-MM2" secondAttribute="top" constant="8" id="Iru-Cb-w7B"/>
+                            <constraint firstAttribute="trailing" secondItem="GkN-7K-ZWL" secondAttribute="trailing" constant="16" id="a44-33-7QU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KlN-is-MM2" firstAttribute="leading" secondItem="Io2-sX-ygV" secondAttribute="leading" constant="6" id="2ax-8l-W7G"/>
+                    <constraint firstAttribute="bottom" secondItem="KlN-is-MM2" secondAttribute="bottom" constant="6" id="VIk-Hk-p7F"/>
+                    <constraint firstItem="KlN-is-MM2" firstAttribute="top" secondItem="Io2-sX-ygV" secondAttribute="top" constant="6" id="lgg-hH-t5H"/>
+                    <constraint firstAttribute="trailing" secondItem="KlN-is-MM2" secondAttribute="trailing" constant="6" id="tum-Ry-aWI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="KlN-is-MM2" id="9B8-9h-EOn"/>
+                <outlet property="detailsLbl" destination="Whu-qB-Hbt" id="NX1-lX-tmO"/>
+                <outlet property="noteImageView" destination="JTJ-Ez-AWw" id="iuZ-Uz-M8T"/>
+                <outlet property="userImageView" destination="XYa-t0-Kl2" id="t1V-wo-anh"/>
+                <outlet property="usernameLbl" destination="85y-JH-TKH" id="GI8-J5-AlY"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="-2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doc" catalog="system" width="115" height="128"/>
+    </resources>
+</document>
