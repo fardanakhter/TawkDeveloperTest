@@ -10,9 +10,9 @@ import UIKit
 
 class SearchBarAdapter: NSObject, UISearchBarDelegate{
     
-    var viewModel: ListDataRepresenter!
+    var viewModel: ListViewModelProvider!
     
-    init(viewModel: ListDataRepresenter) {
+    init(viewModel: ListViewModelProvider) {
         self.viewModel = viewModel
     }
     

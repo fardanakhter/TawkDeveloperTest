@@ -92,7 +92,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.cellForRow(at: indexPath) as! UserParentCell
         let vc = ViewControllerManager.instance.getDetailViewController() as! DetailViewController
         self.setBackButtonTitle("")
-        vc.username = cell.usernameLbl.text ?? ""
+        vc.viewModelProvider = ListDetailViewModelProvider(username: self.viewModels[indexPath.row].username)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

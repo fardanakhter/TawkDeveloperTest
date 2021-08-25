@@ -35,21 +35,20 @@ class DetailViewController: UIViewController {
     
     var username = ""
     
-    fileprivate var dataRepresentable: ListDetailDataRepresentable!
+    var viewModelProvider: ListDetailViewModelProvider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "\(username)"
-        initDataRepresentor()
+        initViewModelProvider()
+        title = viewModelProvider.username
     }
     
     
-    func initDataRepresentor(){
-        self.dataRepresentable = ListDetailDataRepresentable(username: username)
+    func initViewModelProvider(){
+        //self.viewModelProvider = ListDetailViewModelProvider(username: username)
         
         // handle loader on API status
-        dataRepresentable.loadingUpdateCallBack = { status in
+        viewModelProvider.loadingUpdateCallBack = { status in
             if status {
                 //self.showLoader(title: "Loading", message: "Please Wait..")
             }else{
@@ -58,7 +57,7 @@ class DetailViewController: UIViewController {
         }
         
         // update UI with latest ViewModel
-        dataRepresentable.networkDataCallBack = { data in
+        viewModelProvider.networkDataCallBack = { data in
             
             self.userImageView.downloaded(from: data.image, didLoadImage: {})
             
@@ -73,16 +72,16 @@ class DetailViewController: UIViewController {
         }
         
         // update UI for saved note completion
-        dataRepresentable.savedNoteCallBack = {
+        viewModelProvider.savedNoteCallBack = {
             self.presentSavedAlert()
         }
         
         // make network call
-        dataRepresentable.networkCall()
+        viewModelProvider.networkCall()
     }
     
     @IBAction func saveBtnAction(_ sender: Any) {
-        self.dataRepresentable.didSaveNote(note: notesTextView.text)
+        self.viewModelProvider.didSaveNote(note: notesTextView.text)
     }
     
     func presentSavedAlert(){

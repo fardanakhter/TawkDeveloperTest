@@ -36,7 +36,7 @@ class ListDetailViewModel: DataViewModel{
 
 
 // This class is responsible for providing updated ViewModel to UIViewController
-class ListDetailDataRepresentable: NSObject{
+class ListDetailViewModelProvider: NSObject{
     
     // closures for completions
     var loadingUpdateCallBack: ((Bool) -> Void) = {(_) in }
@@ -44,7 +44,7 @@ class ListDetailDataRepresentable: NSObject{
     var savedNoteCallBack: (() -> Void) = {}
     
     private let manager: CDManager!
-    private let username: String
+    private(set) var username: String
     
     init(username: String) {
         self.username = username

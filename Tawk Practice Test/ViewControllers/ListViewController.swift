@@ -33,7 +33,7 @@ class ListViewController: UIViewController {
     }
     
     // MARK:- DataRepresentor & ViewModel
-    lazy var dataRepresentable = ListDataRepresenter()
+    lazy var viewModelProvider = ListViewModelProvider()
     var viewModels = [ListViewModel]() {
         didSet{
             guard !viewModels.isEmpty else {return}
@@ -73,12 +73,12 @@ class ListViewController: UIViewController {
         //        print(last)
         
         // To fill UI with cache and get new data in parallel
-        initDataRepresentor()
+        initViewModelPRovider()
         populateUIWithCacheData()
         
         // make network call
         if viewModels.isEmpty {
-            dataRepresentable.networkCall()
+            viewModelProvider.networkCall()
         }
     }
     // MARK:-
@@ -94,7 +94,7 @@ class ListViewController: UIViewController {
                 // make network call and update UI
                 self.hideLoader()
                 if self.isNewDataRequested {
-                    self.dataRepresentable.networkCall()
+                    self.viewModelProvider.networkCall()
                 }
                 break
             }
@@ -105,14 +105,14 @@ class ListViewController: UIViewController {
     func setupSearchBar(){
         searchBar.placeholder = "Search users"
         self.navigationItem.titleView = searchBar
-        searchAdaptor = SearchBarAdapter(viewModel: dataRepresentable)
+        searchAdaptor = SearchBarAdapter(viewModel: viewModelProvider)
         searchBar.delegate = searchAdaptor
     }
     
     // Initialize data representor object here wit Callbacks registerations
-    func initDataRepresentor(){
+    func initViewModelPRovider(){
         // handle loader on API status
-        dataRepresentable.loadingUpdateCallBack = { status in
+        viewModelProvider.loadingUpdateCallBack = { status in
             if status {
                 //self.showLoader(title: "Loading", message: "Please Wait..")
             }else{
@@ -121,24 +121,24 @@ class ListViewController: UIViewController {
         }
         
         // update UI with latest ViewModel
-        dataRepresentable.networkDataCallBack = { data in
+        viewModelProvider.networkDataCallBack = { data in
             self.viewModels = data
         }
         
         // update search list UI
-        dataRepresentable.searchedDataCallBack = { data in
+        viewModelProvider.searchedDataCallBack = { data in
             self.searchResultViewModels = data
         }
     }
     
     // MARK:- Gets data from cache 
     func populateUIWithCacheData(){
-        dataRepresentable.getCacheData()
+        viewModelProvider.getCacheData()
     }
     
     // MARK:- Loads more data
     func loadMoreItemsForList(){
-        dataRepresentable.networkCall()
+        viewModelProvider.networkCall()
     }
     
     //MARK:- scrollViewDidScroll
