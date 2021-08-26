@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		043408A926CE59E800A0D5FF /* CDUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043408A826CE59E800A0D5FF /* CDUserModel.swift */; };
-		043408AE26CE5A5D00A0D5FF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043408AD26CE5A5D00A0D5FF /* DatabaseManager.swift */; };
+		043408AE26CE5A5D00A0D5FF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043408AD26CE5A5D00A0D5FF /* Protocols.swift */; };
 		043408B226CE5A8200A0D5FF /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043408B126CE5A8200A0D5FF /* CDManager.swift */; };
 		043408B526CE5AD900A0D5FF /* CDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043408B426CE5AD900A0D5FF /* CDModel.swift */; };
 		043408BA26CE645500A0D5FF /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043408B926CE645500A0D5FF /* APIs.swift */; };
@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		043408A826CE59E800A0D5FF /* CDUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUserModel.swift; sourceTree = "<group>"; };
-		043408AD26CE5A5D00A0D5FF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		043408AD26CE5A5D00A0D5FF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		043408B126CE5A8200A0D5FF /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 		043408B426CE5AD900A0D5FF /* CDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDModel.swift; sourceTree = "<group>"; };
 		043408B926CE645500A0D5FF /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 				04B6BBD126D316E10026505A /* Reachability.swift */,
 				04B6BBC426D2EF430026505A /* SearchBarAdapter.swift */,
 				04B6BBCD26D315FB0026505A /* ConnectionManager.swift */,
-				043408AD26CE5A5D00A0D5FF /* DatabaseManager.swift */,
+				043408AD26CE5A5D00A0D5FF /* Protocols.swift */,
 				043408B126CE5A8200A0D5FF /* CDManager.swift */,
 				043668D226C7C75A007A7DED /* ViewControllerManager.swift */,
 				04365B3726D17BBA003D24DA /* CacheImageView.swift */,
@@ -353,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043668AF26C7C246007A7DED /* AppDelegate.swift in Sources */,
-				043408AE26CE5A5D00A0D5FF /* DatabaseManager.swift in Sources */,
+				043408AE26CE5A5D00A0D5FF /* Protocols.swift in Sources */,
 				043408BE26CE669F00A0D5FF /* NetworkRouter.swift in Sources */,
 				043668CA26C7C489007A7DED /* DetailViewController.swift in Sources */,
 				04365B2F26D155F1003D24DA /* ListViewControllerServices.swift in Sources */,

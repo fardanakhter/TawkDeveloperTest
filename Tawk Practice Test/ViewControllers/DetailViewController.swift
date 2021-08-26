@@ -48,8 +48,6 @@ class DetailViewController: UIViewController, Coordinated {
     
     
     func initViewModelProvider(){
-        //self.viewModelProvider = ListDetailViewModelProvider(username: username)
-        
         // handle loader on API status
         viewModelProvider.loadingUpdateCallBack = { status in
             if status {

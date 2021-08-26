@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-class ViewControllerCoordinator{
+class ViewControllerCoordinator: Coordinator{
     
-    private let navigation: UINavigationController?
-    private let isAnimatable = true
+    var navigation: UINavigationController?
+    var isAnimatable: Bool = true
     
     init(navigation: UINavigationController?){
         self.navigation = navigation

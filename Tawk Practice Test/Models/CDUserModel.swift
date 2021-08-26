@@ -7,7 +7,8 @@
 import Foundation
 import CoreData
 
-// MARK: - UserModel
+// MARK: - CDUserModel
+// Parses Json response + CoreData entry
 class CDUserModel: CDModel{
     
     @NSManaged var login: String?

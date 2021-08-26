@@ -6,24 +6,34 @@
 //
 
 import Foundation
+import UIKit
 
+// MARK:- Coordinator Protocol
+protocol Coordinator{
+    var navigation: UINavigationController? { get set }
+    var isAnimatable: Bool { get set }
+}
+
+// MARK:- MVVM Protocols
+
+// protocol to be implemented by table view cell for mapping data from view model
 protocol DataTableViewCell{
     func configure(viewModel: DataViewModel)
 }
 
+// protocol to be implemented by models
 protocol DataModel{}
 
+// The adoptor of this protocol must handle logic for data binding b/w model and view model
+// and expose view model to views
 protocol DataViewModelProvider{}
 
+// protocol to be implemented by view models
 protocol DataViewModel{
-    //func configure(model: DataModel, indexPath: IndexPath)
     func configure(model: DataModel)
 }
 
-//extension DataViewModel{
-//    func configure(model: DataModel){}
-//}
-
+// MARK:- Data Persistent protocols
 protocol DatabaseModelProtocol{}
 
 protocol DatabaseManager{

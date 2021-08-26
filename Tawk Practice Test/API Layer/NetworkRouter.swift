@@ -111,8 +111,9 @@ struct Router{
 
                 dispatchQueueMain.async {
                     do {
-                        //DEBUG: data simulated
-//                        if let resultCodable = try Router.decodeJsonToCoredata(data: testingJsonData, decoderType: T.self){
+                        //DEBUG: data simulation
+                        //if let resultCodable = try Router.decodeJsonToCoredata(data: testingJsonData, decoderType: T.self){
+                        
                         if let resultCodable = try Router.decodeJsonToCoredata(data: data, decoderType: T.self){
                             completion(.success(resultCodable))
                         }
