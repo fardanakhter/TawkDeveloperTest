@@ -89,8 +89,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewModel = self.viewModels[indexPath.row]
+        // check for searched user or normal user detail
+        let viewModel = tableView == searchResultTableview ? searchResultViewModels![indexPath.row] : viewModels[indexPath.row]
         let listDetailViewModelProvider = ListDetailViewModelProvider(username: viewModel.username)
         coordinator?.moveToDetail(viewModelProvider: listDetailViewModelProvider)
+        
     }
 }

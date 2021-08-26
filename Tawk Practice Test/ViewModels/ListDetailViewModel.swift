@@ -94,7 +94,6 @@ class ListDetailViewModelProvider: NSObject, DataViewModelProvider{
     // This updates cache model with new values from API
     private func updateCacheWithNewData(model: ListDetailDataType) -> ListDetailDataType{
         //update user with new values and save context
-        let manager = CDManager(entity: .user)
         if let searchedModel = getModelfromCache(matching: model, by: manager) {
             // copy updated value to old cache
             searchedModel.clone(model: model)

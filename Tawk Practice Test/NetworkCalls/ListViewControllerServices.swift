@@ -12,10 +12,6 @@ struct ListViewControllerServices{
     static let shared = ListViewControllerServices()
     
     func getListOfUsers(page: Int, completion: @escaping (ListDataType?, Bool) -> Void){
-        
-        let manager = CDManager(entity: .user)
-        manager.deleteAll()
-        
         Router.makeRequest(url: .userList(since: page), method: .get) {
             (result: Result<ListDataType, Router.ReponseError>) in
             
