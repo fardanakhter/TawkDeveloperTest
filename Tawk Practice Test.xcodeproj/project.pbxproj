@@ -28,6 +28,7 @@
 		043668D926C7CCE2007A7DED /* UserParentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043668D726C7CCE2007A7DED /* UserParentCell.swift */; };
 		043668DA26C7CCE2007A7DED /* NormalUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043668D826C7CCE2007A7DED /* NormalUserCell.xib */; };
 		0436690226C7D52E007A7DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436690126C7D52E007A7DED /* SceneDelegate.swift */; };
+		0438D7EE26D7571600185F61 /* ViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438D7ED26D7571600185F61 /* ViewControllerCoordinator.swift */; };
 		04B6BBAC26D2A2CC0026505A /* DetailViewControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6BBAB26D2A2CC0026505A /* DetailViewControllerService.swift */; };
 		04B6BBB026D2A6280026505A /* ListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6BBAF26D2A6280026505A /* ListDetailViewModel.swift */; };
 		04B6BBB626D2E7070026505A /* InvertedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6BBB426D2E7070026505A /* InvertedUserCell.xib */; };
@@ -63,6 +64,7 @@
 		043668D726C7CCE2007A7DED /* UserParentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParentCell.swift; sourceTree = "<group>"; };
 		043668D826C7CCE2007A7DED /* NormalUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalUserCell.xib; sourceTree = "<group>"; };
 		0436690126C7D52E007A7DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0438D7ED26D7571600185F61 /* ViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCoordinator.swift; sourceTree = "<group>"; };
 		04B6BBAB26D2A2CC0026505A /* DetailViewControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerService.swift; sourceTree = "<group>"; };
 		04B6BBAF26D2A6280026505A /* ListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewModel.swift; sourceTree = "<group>"; };
 		04B6BBB426D2E7070026505A /* InvertedUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvertedUserCell.xib; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				043408B126CE5A8200A0D5FF /* CDManager.swift */,
 				043668D226C7C75A007A7DED /* ViewControllerManager.swift */,
 				04365B3726D17BBA003D24DA /* CacheImageView.swift */,
+				0438D7ED26D7571600185F61 /* ViewControllerCoordinator.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				043408BA26CE645500A0D5FF /* APIs.swift in Sources */,
 				04B6BBCE26D315FB0026505A /* ConnectionManager.swift in Sources */,
 				043668B926C7C246007A7DED /* Tawk_Practice_Test.xcdatamodeld in Sources */,
+				0438D7EE26D7571600185F61 /* ViewControllerCoordinator.swift in Sources */,
 				043668D926C7CCE2007A7DED /* UserParentCell.swift in Sources */,
 				043668CF26C7C619007A7DED /* ListViewControllerExtension.swift in Sources */,
 				04B6BBD226D316E10026505A /* Reachability.swift in Sources */,

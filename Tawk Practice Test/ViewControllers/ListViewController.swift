@@ -11,7 +11,7 @@ import CoreData
 // typealias for ease for future change in data type
 typealias ListDataType = [CDUserModel]
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController, Coordinated {
     
     //    func displayIds(){
     //        list.forEach{ print($0.id) }
@@ -31,6 +31,9 @@ class ListViewController: UIViewController {
             self.registerCell(searchResultTableview)
         }
     }
+    
+    // MARK:- Coordinator
+    var coordinator: ViewControllerCoordinator?
     
     // MARK:- DataRepresentor & ViewModel
     lazy var viewModelProvider = ListViewModelProvider()
@@ -57,6 +60,7 @@ class ListViewController: UIViewController {
     // MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewControllerCoordinator()
         observeConnectionStatus()
         setupSearchBar()
     }
@@ -72,6 +76,8 @@ class ListViewController: UIViewController {
         //        let last = (coreDataManager.fetchDatabaseModels().last as? CDUserModel)?.id
         //        print(last)
         
+        setBackButtonTitle("")
+        
         // To fill UI with cache and get new data in parallel
         initViewModelPRovider()
         populateUIWithCacheData()
@@ -82,6 +88,10 @@ class ListViewController: UIViewController {
         }
     }
     // MARK:-
+    
+    func setupViewControllerCoordinator(){
+        coordinator = ViewControllerCoordinator(navigation: navigationController)
+    }
     
     func observeConnectionStatus(){
         ConnectionManager.connectionStatusObserver = { (status) in
@@ -105,7 +115,7 @@ class ListViewController: UIViewController {
     func setupSearchBar(){
         searchBar.placeholder = "Search users"
         self.navigationItem.titleView = searchBar
-        searchAdaptor = SearchBarAdapter(viewModel: viewModelProvider)
+        searchAdaptor = SearchBarAdapter(viewModelProvider: viewModelProvider)
         searchBar.delegate = searchAdaptor
     }
     

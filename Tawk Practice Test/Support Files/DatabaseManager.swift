@@ -13,6 +13,8 @@ protocol DataTableViewCell{
 
 protocol DataModel{}
 
+protocol DataViewModelProvider{}
+
 protocol DataViewModel{
     //func configure(model: DataModel, indexPath: IndexPath)
     func configure(model: DataModel)

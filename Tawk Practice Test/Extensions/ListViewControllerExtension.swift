@@ -89,10 +89,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! UserParentCell
-        let vc = ViewControllerManager.instance.getDetailViewController() as! DetailViewController
-        self.setBackButtonTitle("")
-        vc.viewModelProvider = ListDetailViewModelProvider(username: self.viewModels[indexPath.row].username)
-        self.navigationController?.pushViewController(vc, animated: true)
+        let viewModel = self.viewModels[indexPath.row]
+        let listDetailViewModelProvider = ListDetailViewModelProvider(username: viewModel.username)
+        coordinator?.moveToDetail(viewModelProvider: listDetailViewModelProvider)
     }
 }

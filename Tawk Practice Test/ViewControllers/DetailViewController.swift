@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, Coordinated {
     
     @IBOutlet weak var userImageView: CacheImageView!
     @IBOutlet weak var followersLbl: UILabel!
@@ -33,8 +33,11 @@ class DetailViewController: UIViewController {
         }
     }
     
-    var username = ""
     
+    // MARK:- Coordinator
+    var coordinator: ViewControllerCoordinator?
+    
+    // MARK:- ViewModelProvider
     var viewModelProvider: ListDetailViewModelProvider!
     
     override func viewDidLoad() {

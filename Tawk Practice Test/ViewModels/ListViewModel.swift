@@ -26,7 +26,7 @@ class ListViewModel: DataViewModel{
 }
 
 // This class is responsible for providing updated ViewModel to UIViewController
-class ListViewModelProvider: NSObject{
+class ListViewModelProvider: NSObject, DataViewModelProvider{
     
     // MARK:- Closures for callbacks
     var loadingUpdateCallBack: ((Bool) -> Void) = {(_) in }

@@ -36,7 +36,7 @@ class ListDetailViewModel: DataViewModel{
 
 
 // This class is responsible for providing updated ViewModel to UIViewController
-class ListDetailViewModelProvider: NSObject{
+class ListDetailViewModelProvider: NSObject, DataViewModelProvider{
     
     // closures for completions
     var loadingUpdateCallBack: ((Bool) -> Void) = {(_) in }

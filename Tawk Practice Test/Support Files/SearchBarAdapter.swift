@@ -10,14 +10,16 @@ import UIKit
 
 class SearchBarAdapter: NSObject, UISearchBarDelegate{
     
-    var viewModel: ListViewModelProvider!
+    var viewModelProvider: DataViewModelProvider!
     
-    init(viewModel: ListViewModelProvider) {
-        self.viewModel = viewModel
+    init(viewModelProvider: DataViewModelProvider) {
+        self.viewModelProvider = viewModelProvider
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // fetch models from coredata here with text matching username and notes
-        viewModel.didSearchText(text: searchText.lowercased())
+        if let listViewModelProvider = viewModelProvider as? ListViewModelProvider{
+            listViewModelProvider.didSearchText(text: searchText.lowercased())
+        }
     }
 }
