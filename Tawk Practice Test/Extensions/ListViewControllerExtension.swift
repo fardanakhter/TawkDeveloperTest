@@ -93,6 +93,5 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         let viewModel = tableView == searchResultTableview ? searchResultViewModels![indexPath.row] : viewModels[indexPath.row]
         let listDetailViewModelProvider = ListDetailViewModelProvider(username: viewModel.username)
         coordinator?.moveToDetail(viewModelProvider: listDetailViewModelProvider)
-        
     }
 }

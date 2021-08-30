@@ -37,8 +37,20 @@
 		04B6BBCE26D315FB0026505A /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6BBCD26D315FB0026505A /* ConnectionManager.swift */; };
 		04B6BBD226D316E10026505A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6BBD126D316E10026505A /* Reachability.swift */; };
 		04D58F1726C7DA7200108795 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D58F1626C7DA7200108795 /* Extensions.swift */; };
+		39FA66DC26DCE0D000170E1A /* Tawk_Practice_List_Unit_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA66DB26DCE0D000170E1A /* Tawk_Practice_List_Unit_test.swift */; };
+		39FA66DE26DCE12E00170E1A /* Tawk_Practice_Detail_Unit_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA66DD26DCE12E00170E1A /* Tawk_Practice_Detail_Unit_Test.swift */; };
 		3E9722F3C93AE179C6E2F761 /* Pods_Tawk_Practice_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBF7CAA17E751787FE15D4D /* Pods_Tawk_Practice_Test.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39FA66D626DCCE5800170E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043668A326C7C245007A7DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043668AA26C7C246007A7DED;
+			remoteInfo = "Tawk Practice Test";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		043408A826CE59E800A0D5FF /* CDUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUserModel.swift; sourceTree = "<group>"; };
@@ -73,6 +85,10 @@
 		04B6BBCD26D315FB0026505A /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		04B6BBD126D316E10026505A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		04D58F1626C7DA7200108795 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		39FA66D126DCCE5800170E1A /* Tawk Practice Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tawk Practice Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FA66D526DCCE5800170E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39FA66DB26DCE0D000170E1A /* Tawk_Practice_List_Unit_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tawk_Practice_List_Unit_test.swift; sourceTree = "<group>"; };
+		39FA66DD26DCE12E00170E1A /* Tawk_Practice_Detail_Unit_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tawk_Practice_Detail_Unit_Test.swift; sourceTree = "<group>"; };
 		3B5FCD9B376A28F3B335E68F /* Pods-Tawk Practice Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawk Practice Test.release.xcconfig"; path = "Target Support Files/Pods-Tawk Practice Test/Pods-Tawk Practice Test.release.xcconfig"; sourceTree = "<group>"; };
 		3EBF7CAA17E751787FE15D4D /* Pods_Tawk_Practice_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tawk_Practice_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD5156631F4382CC62C1565 /* Pods-Tawk Practice Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawk Practice Test.debug.xcconfig"; path = "Target Support Files/Pods-Tawk Practice Test/Pods-Tawk Practice Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +100,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E9722F3C93AE179C6E2F761 /* Pods_Tawk_Practice_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FA66CE26DCCE5800170E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				043668AD26C7C246007A7DED /* Tawk Practice Test */,
+				39FA66D226DCCE5800170E1A /* Tawk Practice Unit Tests */,
 				043668AC26C7C246007A7DED /* Products */,
 				7777B720F7BECE3A5919ECF6 /* Pods */,
 				E53B5FA05A564C22D11D1C5D /* Frameworks */,
@@ -131,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				043668AB26C7C246007A7DED /* Tawk Practice Test.app */,
+				39FA66D126DCCE5800170E1A /* Tawk Practice Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +243,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		39FA66D226DCCE5800170E1A /* Tawk Practice Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				39FA66DD26DCE12E00170E1A /* Tawk_Practice_Detail_Unit_Test.swift */,
+				39FA66DB26DCE0D000170E1A /* Tawk_Practice_List_Unit_test.swift */,
+				39FA66D526DCCE5800170E1A /* Info.plist */,
+			);
+			path = "Tawk Practice Unit Tests";
+			sourceTree = "<group>";
+		};
 		7777B720F7BECE3A5919ECF6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,17 +292,39 @@
 			productReference = 043668AB26C7C246007A7DED /* Tawk Practice Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		39FA66D026DCCE5800170E1A /* Tawk Practice Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39FA66DA26DCCE5800170E1A /* Build configuration list for PBXNativeTarget "Tawk Practice Unit Tests" */;
+			buildPhases = (
+				39FA66CD26DCCE5800170E1A /* Sources */,
+				39FA66CE26DCCE5800170E1A /* Frameworks */,
+				39FA66CF26DCCE5800170E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39FA66D726DCCE5800170E1A /* PBXTargetDependency */,
+			);
+			name = "Tawk Practice Unit Tests";
+			productName = "Tawk Practice Unit Tests";
+			productReference = 39FA66D126DCCE5800170E1A /* Tawk Practice Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		043668A326C7C245007A7DED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					043668AA26C7C246007A7DED = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					39FA66D026DCCE5800170E1A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 043668AA26C7C246007A7DED;
 					};
 				};
 			};
@@ -285,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				043668AA26C7C246007A7DED /* Tawk Practice Test */,
+				39FA66D026DCCE5800170E1A /* Tawk Practice Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +358,13 @@
 				04B6BBBB26D2E7200026505A /* NoteUserCell.xib in Resources */,
 				043668BB26C7C246007A7DED /* Assets.xcassets in Resources */,
 				043668B626C7C246007A7DED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FA66CF26DCCE5800170E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +444,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39FA66CD26DCCE5800170E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FA66DE26DCE12E00170E1A /* Tawk_Practice_Detail_Unit_Test.swift in Sources */,
+				39FA66DC26DCE0D000170E1A /* Tawk_Practice_List_Unit_test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39FA66D726DCCE5800170E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043668AA26C7C246007A7DED /* Tawk Practice Test */;
+			targetProxy = 39FA66D626DCCE5800170E1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		043668B426C7C246007A7DED /* Main.storyboard */ = {
@@ -557,6 +639,48 @@
 			};
 			name = Release;
 		};
+		39FA66D826DCCE5800170E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3F6RWD56C;
+				INFOPLIST_FILE = "Tawk Practice Unit Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pumpjackdataworks.pjdsdk.Tawk-Practice-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tawk Practice Test.app/Tawk Practice Test";
+			};
+			name = Debug;
+		};
+		39FA66D926DCCE5800170E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3F6RWD56C;
+				INFOPLIST_FILE = "Tawk Practice Unit Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pumpjackdataworks.pjdsdk.Tawk-Practice-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tawk Practice Test.app/Tawk Practice Test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,6 +698,15 @@
 			buildConfigurations = (
 				043668C326C7C246007A7DED /* Debug */,
 				043668C426C7C246007A7DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39FA66DA26DCCE5800170E1A /* Build configuration list for PBXNativeTarget "Tawk Practice Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FA66D826DCCE5800170E1A /* Debug */,
+				39FA66D926DCCE5800170E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

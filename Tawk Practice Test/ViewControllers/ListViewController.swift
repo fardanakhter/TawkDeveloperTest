@@ -13,10 +13,6 @@ typealias ListDataType = [CDUserModel]
 
 class ListViewController: UIViewController, Coordinated {
     
-    //    func displayIds(){
-    //        list.forEach{ print($0.id) }
-    //    }
-    
     // MARK:- Outlets
     @IBOutlet weak var tableView: UITableView!{
         didSet{
@@ -67,15 +63,6 @@ class ListViewController: UIViewController, Coordinated {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //        let user = CDUserModel(context: coreDataManager.context)
-        //        user.id = 1000
-        //        coreDataManager.addDatabaseModel(model: user)
-        //        coreDataManager.saveContext()
-        //
-        //        list.append(user)
-        //        let last = (coreDataManager.fetchDatabaseModels().last as? CDUserModel)?.id
-        //        print(last)
-        
         setBackButtonTitle("")
         
         // To fill UI with cache and get new data in parallel

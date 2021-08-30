@@ -30,7 +30,6 @@ class CDModel: NSManagedObject, DatabaseModelProtocol, Codable, DataModel{
     required convenience init(from decoder: Decoder) throws {
         guard let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey.managedObjectContext,
               let managedObjectContext = decoder.userInfo[codingUserInfoKeyManagedObjectContext] as? NSManagedObjectContext
-              //,let entity = NSEntityDescription.entity(forEntityName: CoreDataEntity.none.rawValue, in: managedObjectContext)
         else {
             fatalError("Failed to decode entity!")
         }
